@@ -9,7 +9,7 @@ class MyViewModel : ViewModel() {
     val nameString: LiveData<List<String>> = _nameString
 
     init {
-        val data = listOf<String>(
+        val data = listOf(
             "Alabama - AL",
             "Alaska - AK",
             "Arizona - AZ",

@@ -1,11 +1,11 @@
 package com.example.recyclerviewwithdatabinding.util
 
-import android.view.View
 import android.widget.TextView
+import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewwithdatabinding.R
 
-class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+class MyViewHolder(itemView: ViewDataBinding): RecyclerView.ViewHolder(binding.root) {
     val stateName : TextView
 
     init {

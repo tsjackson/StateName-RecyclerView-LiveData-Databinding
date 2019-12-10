@@ -17,6 +17,6 @@ class MyBaseAdapter(val dataSet: List<String>, val context: Context):  RecyclerV
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-//        holder.stateName.text = dataSet[position]
+        holder.onBind(dataSet[position])
     }
 }
